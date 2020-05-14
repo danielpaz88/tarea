@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:elevation="@dimen/elevacion_actionbar"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombreMarca"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="@dimen/nombre_mascota"
+            android:layout_marginLeft="@dimen/margen_izq_largo"
+            android:layout_marginRight="@dimen/margen_derBar">
+        </TextView>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgBoton"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margen_izqBar"
+            android:layout_marginRight="@dimen/margen_derBar"
+            android:background="@mipmap/ic_estrella"
+            >
+
+        </ImageButton>
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

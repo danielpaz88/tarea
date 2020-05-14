@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TareaDPazRV</string>
+    <string name="mascota1">Mingui</string>
+    <string name="mascota2">Dani</string>
+    <string name="mascota3">Hopi</string>
+    <string name="mascota4">Logan</string>
+    <string name="mascota5">Gabana</string>
+    <string name="calificacion">5</string>
+    <string name="nombreMarca">Petagram</string>
+    <string name="titulo">Mascotas Gustadas</string>
+</resources>

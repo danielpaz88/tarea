@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="elevacion_actionbar">4dp</dimen>
+    <dimen name="margen_top">20dp</dimen>
+    <dimen name="margen_bottom">20dp</dimen>
+    <dimen name="nombre_mascota">20sp</dimen>
+    <dimen name="margen_izq">10dp</dimen>
+    <dimen name="margen_der">15dp</dimen>
+    <dimen name="ancho_hueso">35dp</dimen>
+    <dimen name="margen_izq_largo">70dp</dimen>
+    <dimen name="margen_der2">30dp</dimen>
+    <dimen name="margen_izq2">30dp</dimen>
+    <dimen name="corner">20dp</dimen>
+    <dimen name="margen_izqBar">20dp</dimen>
+    <dimen name="margen_derBar">20dp</dimen>
+</resources>
