@@ -47,11 +47,11 @@ public class MascotasGustadas extends AppCompatActivity {
     public void inicializarListaMascotas(){
         mascotasd=new ArrayList<MascotaDummy>();
 
-        mascotasd.add(new MascotaDummy(R.drawable.conejo4,"Mingui","4",R.drawable.ic_huesodorado,"Primer puesto"));
-        mascotasd.add(new MascotaDummy(R.drawable.lagartija5,"Jax","3",R.drawable.ic_huesodorado,"Segundo puesto"));
-        mascotasd.add(new MascotaDummy(R.drawable.perro1,"Gabana","4",R.drawable.ic_huesodorado,"Tercer puesto"));
-        mascotasd.add(new MascotaDummy(R.drawable.perro2,"Hopi","5",R.drawable.ic_huesodorado,"Cuarto puesto"));
-        mascotasd.add(new MascotaDummy(R.drawable.conejo4,"Emi","4",R.drawable.ic_huesodorado,"Quinto puesto"));
+        mascotasd.add(new MascotaDummy(R.drawable.conejo3,"Mingui","4",R.drawable.ic_huesodorado/*"Primer puesto"*/));
+        mascotasd.add(new MascotaDummy(R.drawable.conejo4,"Jax","3",R.drawable.ic_huesodorado/*"Segundo puesto"*/));
+        mascotasd.add(new MascotaDummy(R.drawable.conejo5,"Gabana","4",R.drawable.ic_huesodorado/*"Tercer puesto"*/));
+        mascotasd.add(new MascotaDummy(R.drawable.conejo6,"Hopi","5",R.drawable.ic_huesodorado/*"Cuarto puesto"*/));
+        mascotasd.add(new MascotaDummy(R.drawable.conejo7,"Emi","4",R.drawable.ic_huesodorado/*"Quinto puesto"*/));
     }
 
     public void inicializarAdaptador(){

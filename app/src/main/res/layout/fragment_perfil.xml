@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PerfilFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTituloPerfil"
+        android:layout_gravity="center"
+        android:text="@string/mascotaElegida"
+        android:textSize="@dimen/nombre_mascota"
+        android:layout_marginBottom="@dimen/margen_bottom"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/conejo3"
+        app:civ_border_width="3dp"
+        android:layout_gravity="center"
+        app:civ_border_color="#FF000000"
+        android:layout_below="@+id/tvTituloPerfil"
+        android:layout_marginBottom="@dimen/margen_bottom"/>
+   <!-- <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgPerfil"
+        android:layout_gravity="center"
+        android:layout_below="@id/tvTituloPerfil"
+        android:src="@drawable/conejo4"
+        android:layout_marginBottom="@dimen/margen_bottom">
+
+    </ImageView>-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMascotasd"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/profile_image">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!--<GridView
+        android:id="@+id/gvMascotasGV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="150dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:layout_gravity="center"
+        >
+
+    </GridView>-->
+
+</LinearLayout>

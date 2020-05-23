@@ -34,7 +34,7 @@ public class MascotaDummyAdaptador extends RecyclerView.Adapter<MascotaDummyAdap
         holder.imgFoto.setImageResource(mascotad.getFoto());
         holder.tvCalificacion.setText(mascotad.getCalificacion());
         holder.tvNombre.setText(mascotad.getNombre());
-        holder.tvTitulo.setText(mascotad.getTitulo());
+       // holder.tvTitulo.setText(mascotad.getTitulo());
        /* holder.imgFotoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,7 +49,7 @@ public class MascotaDummyAdaptador extends RecyclerView.Adapter<MascotaDummyAdap
     }
 
     public static class MascotaViewHolder extends RecyclerView.ViewHolder{
-        private TextView tvTitulo;
+        //private TextView tvTitulo;
         private ImageView imgFoto;
         private TextView tvCalificacion;
         private TextView tvNombre;
@@ -60,7 +60,7 @@ public class MascotaDummyAdaptador extends RecyclerView.Adapter<MascotaDummyAdap
             imgFoto2=(ImageView) itemView.findViewById(R.id.imgFoto2);
             tvCalificacion=(TextView) itemView.findViewById(R.id.tvCalificacion);
             tvNombre=(TextView) itemView.findViewById(R.id.tvNombre);
-            tvTitulo=(TextView) itemView.findViewById(R.id.tvTitulo);
+            //tvTitulo=(TextView) itemView.findViewById(R.id.tvTitulo);
         }
     }
 }

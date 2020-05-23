@@ -17,7 +17,6 @@
     android:id="@+id/tvTitulo"
     android:textSize="@dimen/nombre_mascota"
     android:layout_marginTop="@dimen/margen_top"
-    android:layout_below="@id/miActionBar"
     android:layout_marginBottom="@dimen/margen_bottom"
     android:layout_gravity="center">
 

@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <TextView
+       <!-- <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tvTitulo"
@@ -20,7 +20,7 @@
             android:textSize="@dimen/nombre_mascota"
             android:layout_marginRight="@dimen/margen_der"
             android:layout_marginLeft="@dimen/margen_izq"
-            android:layout_marginBottom="@dimen/margen_bottom"/>
+            android:layout_marginBottom="@dimen/margen_bottom"/>-->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="150dp"
@@ -37,7 +37,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tvNombre"
                 android:text="Mingui"
-                android:layout_gravity="center_vertical|center"
+                android:paddingLeft="15sp"
+                android:layout_gravity="center_vertical"
                 android:textSize="@dimen/nombre_mascota"
                 android:layout_marginRight="@dimen/margen_der"
                 android:layout_marginLeft="@dimen/margen_izq"/>
@@ -46,6 +47,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tvCalificacion"
                 android:text="4"
+                android:paddingLeft="190sp"
                 android:layout_gravity="center_vertical"
                 android:textSize="@dimen/nombre_mascota"
                 android:layout_marginRight="@dimen/margen_der"/>

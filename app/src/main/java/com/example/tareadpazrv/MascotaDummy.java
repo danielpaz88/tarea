@@ -8,12 +8,12 @@ public class MascotaDummy {
     private String calificacion;
     private String titulo;
 
-    public MascotaDummy(int foto, String nombre, String calificacion, int foto2, String titulo) {
+    public MascotaDummy(int foto, String nombre, String calificacion, int foto2/*String titulo*/) {
         this.nombre = nombre;
         this.calificacion = calificacion;
         this.foto = foto;
         this.foto2 = foto2;
-        this.titulo=titulo;
+        //this.titulo=titulo;
     }
 
     public int getFoto() {

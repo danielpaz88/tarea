@@ -4,6 +4,7 @@
     <dimen name="margen_top">20dp</dimen>
     <dimen name="margen_bottom">20dp</dimen>
     <dimen name="nombre_mascota">20sp</dimen>
+    <dimen name="formulario">18sp</dimen>
     <dimen name="margen_izq">10dp</dimen>
     <dimen name="margen_der">15dp</dimen>
     <dimen name="ancho_hueso">35dp</dimen>
