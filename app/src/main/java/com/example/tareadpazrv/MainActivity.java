@@ -1,24 +1,24 @@
 package com.example.tareadpazrv;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
+
+import com.example.tareadpazrv.adapter.PageAdapter;
+import com.example.tareadpazrv.adapter.mascotaAdaptador;
+import com.example.tareadpazrv.fragment.PerfilFragment;
+import com.example.tareadpazrv.fragment.RecyclerViewFragment;
+import com.example.tareadpazrv.pojo.Mascota;
 
 import java.util.ArrayList;
-
-import static android.widget.Toast.*;
 
 public class MainActivity extends AppCompatActivity {
     public mascotaAdaptador adaptador;

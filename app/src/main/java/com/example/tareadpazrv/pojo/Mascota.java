@@ -1,18 +1,33 @@
-package com.example.tareadpazrv;
+package com.example.tareadpazrv.pojo;
 
 public class Mascota {
     private int foto;
     private int foto2;
     private int fotoBtn;
     private String nombre;
-    private String calificacion;
+    private int id;
+    private int likes;
 
-    public Mascota(int foto, String nombre, String calificacion,int foto2,int fotoBtn) {
+
+
+    public Mascota(int foto, String nombre, int foto2, int fotoBtn,int likes) {
         this.nombre = nombre;
-        this.calificacion=calificacion;
         this.foto=foto;
         this.foto2=foto2;
         this.fotoBtn=fotoBtn;
+        this.likes=likes;
+    }
+
+    public Mascota() {
+
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getFoto2() {
@@ -47,11 +62,11 @@ public class Mascota {
         this.nombre = nombre;
     }
 
-    public String getCalificacion() {
-        return calificacion;
+    public int getLikes() {
+        return likes;
     }
 
-    public void setCalificacion(String calificacion) {
-        this.calificacion = calificacion;
+    public void setLikes(int likes) {
+        this.likes = likes;
     }
 }

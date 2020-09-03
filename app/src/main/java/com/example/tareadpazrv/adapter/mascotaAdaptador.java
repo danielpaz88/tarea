@@ -1,7 +1,6 @@
-package com.example.tareadpazrv;
+package com.example.tareadpazrv.adapter;
 
 import android.app.Activity;
-import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +9,10 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.tareadpazrv.db.ConstructorMascotas;
+import com.example.tareadpazrv.pojo.Mascota;
+import com.example.tareadpazrv.R;
 
 import java.util.ArrayList;
 
@@ -30,17 +33,20 @@ public class mascotaAdaptador extends RecyclerView.Adapter<mascotaAdaptador.Masc
     }
 
     @Override
-    public void onBindViewHolder(MascotaViewHolder holder,int position) {
+    public void onBindViewHolder(final MascotaViewHolder holder, int position) {
     final Mascota mascota=mascotas.get(position);
     holder.imgFoto.setImageResource(mascota.getFoto());
-    holder.tvCalificacion.setText(mascota.getCalificacion());
     holder.tvNombre.setText(mascota.getNombre());
     holder.imgFoto2.setImageResource(mascota.getFoto2());
     holder.imgFotoBtn.setImageResource(mascota.getFotoBtn());
+    holder.tvLikes.setText(String.valueOf(mascota.getLikes()));
     holder.imgFotoBtn.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Toast.makeText(activity, "Puntuaste a "+mascota.getNombre(), Toast.LENGTH_SHORT).show();
+            ConstructorMascotas constructorMascotas=new ConstructorMascotas(activity);
+            constructorMascotas.darLikeContacto(mascota);
+            holder.tvLikes.setText(String.valueOf(constructorMascotas.obtenerLikesMascota(mascota)));
         }
     });
     }
@@ -53,7 +59,7 @@ public class mascotaAdaptador extends RecyclerView.Adapter<mascotaAdaptador.Masc
     public static class MascotaViewHolder extends RecyclerView.ViewHolder{
         private ImageButton imgFotoBtn;
         private ImageView imgFoto;
-        private TextView tvCalificacion;
+        private TextView tvLikes;
         private TextView tvNombre;
         private ImageView imgFoto2;
         public MascotaViewHolder(View itemView){
@@ -61,7 +67,7 @@ public class mascotaAdaptador extends RecyclerView.Adapter<mascotaAdaptador.Masc
             imgFoto=(ImageView) itemView.findViewById(R.id.imgFoto);
             imgFotoBtn=(ImageButton) itemView.findViewById(R.id.imgFotoBtn);
             imgFoto2=(ImageView) itemView.findViewById(R.id.imgFoto2);
-            tvCalificacion=(TextView) itemView.findViewById(R.id.tvCalificacion);
+            tvLikes=(TextView) itemView.findViewById(R.id.tvLikes);
             tvNombre=(TextView) itemView.findViewById(R.id.tvNombre);
         }
     }

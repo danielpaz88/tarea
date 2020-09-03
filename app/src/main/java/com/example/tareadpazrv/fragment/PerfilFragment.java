@@ -1,14 +1,16 @@
-package com.example.tareadpazrv;
+package com.example.tareadpazrv.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.GridView;
+
+import com.example.tareadpazrv.pojo.MascotaDummy;
+import com.example.tareadpazrv.R;
+import com.example.tareadpazrv.adapter.MascotaDummyAdaptador;
 
 import java.util.ArrayList;
 
@@ -47,11 +49,13 @@ public class PerfilFragment extends Fragment {
         mascotasd.add(new MascotaDummy(R.drawable.perro1,"Gabana","4",R.drawable.ic_huesodorado,"Tercer puesto"));
         mascotasd.add(new MascotaDummy(R.drawable.perro2,"Hopi","5",R.drawable.ic_huesodorado,"Cuarto puesto"));
         mascotasd.add(new MascotaDummy(R.drawable.conejo4,"Emi","4",R.drawable.ic_huesodorado,"Quinto puesto"));*/
-        mascotasd.add(new MascotaDummy(R.drawable.conejo3,"Mingui","4",R.drawable.ic_huesodorado/*"Primer puesto"*/));
-        mascotasd.add(new MascotaDummy(R.drawable.conejo4,"Jax","3",R.drawable.ic_huesodorado/*"Segundo puesto"*/));
-        mascotasd.add(new MascotaDummy(R.drawable.conejo5,"Gabana","4",R.drawable.ic_huesodorado/*"Tercer puesto"*/));
-        mascotasd.add(new MascotaDummy(R.drawable.conejo6,"Hopi","5",R.drawable.ic_huesodorado/*"Cuarto puesto"*/));
-        mascotasd.add(new MascotaDummy(R.drawable.conejo7,"Emi","4",R.drawable.ic_huesodorado/*"Quinto puesto"*/));
+
+
+        mascotasd.add(new MascotaDummy(R.drawable.conejo3,"Mingui",R.drawable.ic_huesodorado,0));
+        mascotasd.add(new MascotaDummy(R.drawable.conejo4,"Jax",R.drawable.ic_huesodorado,0));
+        mascotasd.add(new MascotaDummy(R.drawable.conejo5,"Gabana",R.drawable.ic_huesodorado,0));
+        mascotasd.add(new MascotaDummy(R.drawable.conejo6,"Hopi",R.drawable.ic_huesodorado,0));
+        mascotasd.add(new MascotaDummy(R.drawable.conejo7,"Emi",R.drawable.ic_huesodorado,0));
     }
 
     public void inicializarAdaptador(){

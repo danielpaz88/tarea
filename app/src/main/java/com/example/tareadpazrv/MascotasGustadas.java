@@ -1,17 +1,16 @@
 package com.example.tareadpazrv;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.ImageButton;
+
+import com.example.tareadpazrv.adapter.MascotaDummyAdaptador;
+import com.example.tareadpazrv.pojo.MascotaDummy;
 
 import java.util.ArrayList;
 
-import static android.widget.Toast.LENGTH_SHORT;
 import static android.widget.Toast.makeText;
 
 public class MascotasGustadas extends AppCompatActivity {
@@ -47,11 +46,11 @@ public class MascotasGustadas extends AppCompatActivity {
     public void inicializarListaMascotas(){
         mascotasd=new ArrayList<MascotaDummy>();
 
-        mascotasd.add(new MascotaDummy(R.drawable.conejo3,"Mingui","4",R.drawable.ic_huesodorado/*"Primer puesto"*/));
-        mascotasd.add(new MascotaDummy(R.drawable.conejo4,"Jax","3",R.drawable.ic_huesodorado/*"Segundo puesto"*/));
-        mascotasd.add(new MascotaDummy(R.drawable.conejo5,"Gabana","4",R.drawable.ic_huesodorado/*"Tercer puesto"*/));
-        mascotasd.add(new MascotaDummy(R.drawable.conejo6,"Hopi","5",R.drawable.ic_huesodorado/*"Cuarto puesto"*/));
-        mascotasd.add(new MascotaDummy(R.drawable.conejo7,"Emi","4",R.drawable.ic_huesodorado/*"Quinto puesto"*/));
+        mascotasd.add(new MascotaDummy(R.drawable.conejo3,"Mingui",R.drawable.ic_huesodorado,0));
+        mascotasd.add(new MascotaDummy(R.drawable.conejo4,"Jax",R.drawable.ic_huesodorado,0));
+        mascotasd.add(new MascotaDummy(R.drawable.conejo5,"Gabana",R.drawable.ic_huesodorado,0));
+        mascotasd.add(new MascotaDummy(R.drawable.conejo6,"Hopi",R.drawable.ic_huesodorado,0));
+        mascotasd.add(new MascotaDummy(R.drawable.conejo7,"Emi",R.drawable.ic_huesodorado,0));
     }
 
     public void inicializarAdaptador(){
